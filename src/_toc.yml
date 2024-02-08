@@ -1,0 +1,32 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Khang's Journal
+    title: Khang's Journal
+    expand_sections: true
+    chapters:
+      - glob: 1.journal/2024/*
+  - caption: Data Science
+    # title: Data Science
+    # numbered: True
+    chapters:
+    - file: 2.data_science/machine_learning
+      options:
+        numbered: true
+      sections:
+      - glob: 2.data_science/machine_learning/notebooks/*
+  - caption: Books 
+    # title: Test books
+    # numbered: true
+    chapters:
+    - file: 3.books/behavioural_science/alpha_brain/alpha_brain
+      options:
+        numbered: true
+      sections:
+      - glob: 3.books/behavioural_science/alpha_brain/ch*
+    - file: 3.books/design/universal_principles_of_design/universal_principles_of_design
+      sections:
+      - glob: 3.books/design/universal_principles_of_design/principles_of_design
